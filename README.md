@@ -26,14 +26,30 @@ are shipping**.
 - **Focused on what I like.** Companies and kinds of features I care about, not
   everything.
 
+Think **a personal Hacker News meets an RSS reader**.
+
+### How it works (rough shape)
+
+1. **The emails still arrive**, just not where I have to read them.
+2. **An agent reads them** and looks for the specific things I care about.
+3. **It writes "posts"**, one per topic that would interest me. Each post is a short
+   write-up that **links back to the source emails** and the relevant links inside
+   them (changelog entries, docs, blog posts).
+4. **I browse the posts** like a front page. If something looks good, I click through.
+
+Several emails about the same thing (an announcement, then a follow-up, then a
+"now GA") can become a single post.
+
 ## Deliberately undecided
 
 I'm not making these calls yet:
 
-- **Sources:** changelogs, blogs, RSS, the newsletters themselves (forwarded to an
-  inbox), GitHub releases, X/Bluesky...?
-- **Extraction:** how "cool feature" gets separated from noise (LLM summarizing,
-  rules, manual curation, some mix).
+- **Email intake:** a dedicated inbox to resubscribe with, forwarding rules from my
+  main inbox, a Gmail label, etc.
+- **Other sources later?** Changelogs, blogs, RSS, GitHub releases could feed the same
+  agent, but emails come first.
+- **The agent:** which model or framework, how it decides what's interesting, and how
+  it groups emails into posts.
 - **Taste:** how it learns what I like (a list of companies, thumbs up/down, tags...).
 - **Shape:** web app, CLI, TUI, a static page rebuilt on visit...
 - **Freshness:** fetch on browse vs. a background crawl that just stays quiet.
